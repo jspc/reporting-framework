@@ -1,33 +1,33 @@
-Position, Game name, MAU rank, DAU rank, MAU rank (lw), DAU rank (lw)
-0, Slotomania, 73, 37, NaN, NaN
-0, DoubleDown Casino, NaN, NaN, NaN, NaN
-0, Lucky Slots, NaN, NaN, NaN, NaN
-0, Jackpot Party Casino, NaN, NaN, NaN, NaN
-0, Caesars Casino, 289, 194, NaN, NaN
-0, High 5 Casino, 351, 173, NaN, NaN
-0, Best Casino, 266, 228, NaN, NaN
-0, Jackpotjoy Slot Machines, 356, 203, NaN, NaN
-0, House of Fun, 242, 233, NaN, NaN
-0, Mirrorball Slots , 340, 242, NaN, NaN
-0, Hollywood Spins, 334, 256, NaN, NaN
-0, ClickFun Casino, 357, 280, NaN, NaN
-0, Lucky Gem Casino, 470, 287, NaN, NaN
-0, Slot City Casino, 498, 307, NaN, NaN
-0, 3D Slots, 477, 329, NaN, NaN
-0, The Price Is Right Slots, 575, 379, NaN, NaN
-0, Zynga Elite Slots, NaN, NaN, NaN, NaN
-0, GameHouse Slots(Slotorama), NaN, NaN, NaN, NaN
-0, Slots Farm, 764, 498, NaN, NaN
-0, Slot Galaxy, 682, 450, NaN, NaN
-0, Spades & Hearts Casino, 0, 0, NaN, NaN
-0, SlotSpot Casino, 1024, 756, NaN, NaN
-0, Lucky Cruise Slots, 1366, 825, NaN, NaN
-0, Press Your Luck Slots, 1128, 943, NaN, NaN
-0, Winner Super Slots, 1464, 1047, NaN, NaN
-0, Team Slots, 2343, 1527, NaN, NaN
-0, Jackpotjoy Casino, 4353, 2177, NaN, NaN
-0, Slot Universe, NaN, NaN, NaN, NaN
-0, Trophy Slots, 1477, 2057, NaN, NaN
-0, Adventure Slots, 6591, 3837, NaN, NaN
-0, SlotsPoint, 8159, 4995, NaN, NaN
-0, Pet Vegas, NaN, NaN, NaN, NaN
+Ranking, Game, DAU, MAU, DAU (lw), MAU (lw)
+n/a,Pet Vegas, 0, 0, 0, 0
+n/a,DoubleDown Casino, 0, 0, 0, 0
+n/a,Lucky Slots, 0, 0, 0, 0
+n/a,Jackpot Party Casino, 0, 0, 0, 0
+n/a,Slot Universe, 0, 0, 0, 0
+n/a,Spades & Hearts Casino, 0, 0, 0, 0
+n/a,GameHouse Slots(Slotorama), 0, 0, 0, 0
+n/a,Zynga Elite Slots, 0, 0, 0, 0
+1,Slotomania, 37, 73, 0, 0
+2,High 5 Casino, 173, 351, 0, 0
+3,Caesars Casino, 194, 289, 0, 0
+4,Jackpotjoy Slot Machines, 203, 356, 0, 0
+5,Best Casino, 228, 266, 0, 0
+6,House of Fun, 233, 242, 0, 0
+7,Mirrorball Slots , 242, 340, 0, 0
+8,Hollywood Spins, 256, 334, 0, 0
+9,ClickFun Casino, 280, 357, 0, 0
+10,Lucky Gem Casino, 287, 470, 0, 0
+11,Slot City Casino, 307, 498, 0, 0
+12,3D Slots, 329, 477, 0, 0
+13,The Price Is Right Slots, 379, 575, 0, 0
+14,Slot Galaxy, 450, 682, 0, 0
+15,Slots Farm, 498, 764, 0, 0
+16,SlotSpot Casino, 756, 1024, 0, 0
+17,Lucky Cruise Slots, 825, 1366, 0, 0
+18,Press Your Luck Slots, 943, 1128, 0, 0
+19,Winner Super Slots, 1047, 1464, 0, 0
+20,Team Slots, 1527, 2343, 0, 0
+21,Trophy Slots, 2057, 1477, 0, 0
+22,Jackpotjoy Casino, 2177, 4353, 0, 0
+23,Adventure Slots, 3837, 6591, 0, 0
+24,SlotsPoint, 4995, 8159, 0, 0

@@ -18,27 +18,42 @@ class Comp_CSV
   end
 
   def normalise value
-    return "NaN" if value.nil? or value.length == 0
+    return 0 if value.nil? or value.length == 0
     value.to_s! unless value.is_a? String
     value.gsub(',','').to_i
   end
 
-  def get_report
-    report = ""
-    report += "Position, Game name, MAU rank, DAU rank, MAU rank (lw), DAU rank (lw)\n"
+  def build_hashes
+    report = []
 
     @games.each do |game|
       game.chomp!
 
-      dau = normalise @db.get( "watchlist.#{game}.#{@last_run}.dau" )
-      mau = normalise @db.get( "watchlist.#{game}.#{@last_run}.mau" )
-
-      dau_last = normalise @db.get( "watchlist.#{game}.#{@last_week}.dau" )
-      mau_last = normalise @db.get( "watchlist.#{game}.#{@last_week}.mau" )
-
-     report += "0, #{game}, #{mau}, #{dau}, #{mau_last}, #{dau_last}\n"
+      report << {
+        :name     => game,
+        :dau      => normalise( @db.get( "watchlist.#{game}.#{@last_run}.dau" ) ),
+        :mau      => normalise( @db.get( "watchlist.#{game}.#{@last_run}.mau" ) ),
+        :dau_last => normalise( @db.get( "watchlist.#{game}.#{@last_week}.dau" ) ),
+        :mau_last => normalise( @db.get( "watchlist.#{game}.#{@last_week}.mau" ) ),
+      }
     end
     report
   end
 
+  def get_report
+    ranking = 1
+    report = "Ranking, Game, DAU, MAU, DAU (lw), MAU (lw)\n"
+
+    report_array = build_hashes
+    report_array.sort_by { |x| x[:dau] }.each do |report_hash|
+      if report_hash[:dau] > 0
+        report += "#{ranking},"
+        ranking+=1
+      else
+        report+= "n/a,"
+      end
+      report += "#{report_hash[:name]}, #{report_hash[:dau]}, #{report_hash[:mau]}, #{report_hash[:dau_last]}, #{report_hash[:mau_last]}\n"
+    end
+    report
+  end
 end
